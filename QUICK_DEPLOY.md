@@ -15,7 +15,7 @@ Railway is free, fast, and no authentication restrictions.
 4. Connect your GitHub account
 5. Upload this backend folder to a new GitHub repository
 6. Select the repository in Railway
-7. Set environment variable: `OPENROUTER_API_KEY=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`
+7. Set environment variable: `OPENROUTER_API_KEY=your_openrouter_api_key_here`
 8. Railway will automatically deploy and give you a URL
 
 ### Expected URL format:
