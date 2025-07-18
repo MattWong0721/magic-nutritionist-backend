@@ -1,12 +1,22 @@
+console.log('🚀 Starting Magic Nutritionist Backend...');
+
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import fetch from 'node-fetch';
 
+console.log('📦 Imports loaded successfully');
+
 dotenv.config();
+
+console.log('🔧 Environment configured');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+console.log('🌐 Express app created');
+console.log('📍 PORT:', PORT);
+console.log('🔑 API Key present:', !!process.env.OPENROUTER_API_KEY);
 
 // Middleware
 app.use(cors());
