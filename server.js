@@ -154,8 +154,8 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Something went wrong!' });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 Magic Nutritionist API running on port ${PORT}`);
-  console.log(`📍 Health check: http://localhost:${PORT}/api/health`);
-  console.log(`🍎 Food analysis: http://localhost:${PORT}/api/analyze`);
+  console.log(`📍 Health check: http://0.0.0.0:${PORT}/api/health`);
+  console.log(`🍎 Food analysis: http://0.0.0.0:${PORT}/api/analyze`);
 });
